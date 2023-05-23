@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
+.parent {
+  border: 2px solid black;
+  height: 20px;
+  width: 500px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.child {
+  height: 98.74999999%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.animate {
+  background: green;
+  animation: ani 1s linear;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
